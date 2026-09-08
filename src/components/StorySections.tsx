@@ -12,7 +12,7 @@ export function BeginningSection() {
           <p className="section-label">01 · The beginning</p>
           <h2 className="section-heading">It started with a hello.</h2>
           <p className="section-subtitle">
-            25 November 2022 — a date that looked ordinary then, but became the first page of a story worth keeping.
+            25 Nofeembar 2022 — taariikh markii hore caadi u ekaayd, laakiin noqotay boggagii ugu horreeyay ee sheeko qiimo leh.
           </p>
           <div className="section-story story-somali">
             <p>Mararka qaar waxaan is weydiiyaa haddii aan maalintii 25-ka Nofeembar 2022 ogaan lahayn halka ay nagu dambayn doonto isbarashadii TikTok, ma sidaan ayaynu u bilaabi lahayn?</p>
@@ -26,9 +26,9 @@ export function BeginningSection() {
           <div className="story-image-frame">
             <div className="story-floral tl" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
             <div className="story-floral br" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
-            <img src={imageSources.memory[0]} alt="A shared memory from the beginning of the story" />
+            <img src={imageSources.memory[0]} alt="Xusuus ka bilaabaysay sheekada" />
           </div>
-          <p className="story-image-caption">The first page of everything.</p>
+          <p className="story-image-caption">Boggagii kasta ee wax kasta.</p>
         </div>
       </div>
     </section>
@@ -43,19 +43,19 @@ export function MeetingSection() {
         <div className="story-text">
           <p className="section-label">02 · The day we met</p>
           <h2 className="section-heading">20 February 2024.</h2>
-          <p className="section-subtitle">The day a digital friendship became a real-life memory.</p>
-          <div className="section-story">
-            <p>Some days change everything — not because of what happens, but because of what finally becomes real. After months of conversations through screens, 20 February 2024 was the day the story stepped out of a phone and into the world.</p>
-            <p>The first time standing in the same place. The first time a voice had a face, a presence, a warmth that no screen could carry.</p>
+          <p className="section-subtitle">Maalintii saaxiibtinimadii shaashaddu noqotay xusuus dhab ah.</p>
+          <div className="section-story story-somali">
+            <p>Bilado ka dib oo wada hadal ah oo shaashadda marayay, 20 Febraayo 2024 waa maalintii sheekadu ka soo baxday telefoonka oo soo gaaray adduunka dhabta ah.</p>
+            <p>Markii ugu horreysay ee aan isaga ceshano meesha isla mararka ah. Markii ugu horreysay ee codku yeesho waji, joogto, iyo kul ka shaashadda aan kuixin karin.</p>
           </div>
         </div>
         <div className="story-image-wrap">
           <div className="story-image-frame">
             <div className="story-floral tl" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
             <div className="story-floral br" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
-            <img src={imageSources.meeting[0]} alt="20 February 2024 — the day we met in person" />
+            <img src={imageSources.meeting[0]} alt="20 Febraayo 2024 — maalintii aan isku aragnay" />
           </div>
-          <p className="story-image-caption">The day we finally met.</p>
+          <p className="story-image-caption">Maalintii aan ugu dambayn isu aragnay.</p>
         </div>
       </div>
     </section>
@@ -70,7 +70,7 @@ export function LiidoSection() {
         <div className="story-text">
           <p className="section-label">03 · Liido</p>
           <h2 className="section-heading">One night became a memory.</h2>
-          <p className="section-subtitle">Some photographs are ordinary to everyone except the people who lived the moment.</p>
+          <p className="section-subtitle">Sawirro qaar waa caadi dadka kowaad, marka laga reebo kuwa daqanka daartay.</p>
           <div className="section-story story-somali">
             <p>Sanado kadib, waxaa dhacday habeen aan wali xasuusto — Liido.</p>
             <p>Waxaan xasuustaa adiga, turxaaddaada madow iyo cabaayaddii caddaanka iyo madowga isku jirtay. Aniguna caddaan ayaan watay.</p>
@@ -82,9 +82,9 @@ export function LiidoSection() {
           <div className="story-image-frame">
             <div className="story-floral tl" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
             <div className="story-floral br" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
-            <img src={imageSources.liido[0]} alt="Liido — one unforgettable night" />
+            <img src={imageSources.liido[0]} alt="Liido — habeen aan la xasuusan karin" />
           </div>
-          <p className="story-image-caption">A night that stays.</p>
+          <p className="story-image-caption">Habeen ka sii hargaysa.</p>
         </div>
       </div>
     </section>
@@ -107,12 +107,12 @@ export function JourneySection() {
         </div>
         <div className="journey-images">
           <div className="journey-image">
-            <img src={imageSources.journey[0]} alt="Darjiinka — the road between" />
+            <img src={imageSources.journey[0]} alt="Darjiinka — waddada dhexe" />
             <div className="journey-caption">Darjiinka ↔ Sanco</div>
           </div>
           <div className="journey-image">
-            <img src={imageSources.journey[1]} alt="A journey that meant more" />
-            <div className="journey-caption">A journey that meant more</div>
+            <img src={imageSources.journey[1]} alt="Safar ka badan masaafad" />
+            <div className="journey-caption">Safar ka badan masaafad</div>
           </div>
         </div>
       </div>

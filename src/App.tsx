@@ -5,6 +5,7 @@ import Timeline from "./components/Timeline";
 import MemoryWall from "./components/MemoryWall";
 import Gallery from "./components/Gallery";
 import { BirthdaySurprise, WishesSection, LetterSection } from "./components/EmotionalSections";
+import FutureSection from "./components/FutureSection";
 import FinalSection from "./components/FinalSection";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <BirthdaySurprise />
         <WishesSection />
         <LetterSection />
+        <FutureSection />
         <FinalSection />
       </main>
       <MusicPlayer />

@@ -2,13 +2,13 @@ import { useEffect, useRef } from "react";
 import "../styles/timeline.css";
 
 const timelineEvents: { date: string; title: string; desc: string }[] = [
-  { date: "25 Nov 2022", title: "The beginning", desc: "TikTok, conversations, and the first steps toward trust." },
-  { date: "20 Feb 2024", title: "The day we met", desc: "The day the story moved from screens into a real memory." },
-  { date: "Liido", title: "One unforgettable night", desc: "Photos, videos, laughter, and memories." },
-  { date: "90 KM", title: "Jowhar ↔ Xamar", desc: "A distance that became part of the story." },
-  { date: "14 Jan 2025", title: "Kenya", desc: "The day distance changed shape." },
-  { date: "End of 2025", title: "A future imagined", desc: "A conversation about marriage, timing, life, and choosing not to rush what mattered." },
-  { date: "A difficult day", title: "You were there", desc: "A moment when Fatxi offered meaningful support." },
+  { date: "25 Nov 2022", title: "The beginning", desc: "TikTok, wada hadal, iyo tallaabadii ugu horreysay ee kalsoonida." },
+  { date: "20 Feb 2024", title: "The day we met", desc: "Maalintii sheekadu ka soo baxday shaashadda oo noqotay xusuus dhab ah." },
+  { date: "Liido", title: "One unforgettable night", desc: "Sawirro, fiidiyowyada, qosol, iyo xusuuso." },
+  { date: "90 KM", title: "Jowhar ↔ Xamar", desc: "Masaafad noqotay qayb ka mid ah sheekada." },
+  { date: "14 Jan 2025", title: "Kenya", desc: "Maalintii masaafadu qaabkeeda u beddeshay." },
+  { date: "End of 2025", title: "A future imagined", desc: "Wada hadal ku saabsan guurka, waqtiga, nolosha, iyo inaan deg-degnoono waxyaalaha muhiimka ahaa." },
+  { date: "A difficult day", title: "You were there", desc: "Waqti ay Fatxi garab taagnayd oo si macquul ah u taageertay." },
 ];
 
 export default function Timeline() {

@@ -29,7 +29,7 @@ export default function Gallery() {
         <p className="section-label">07 · Photo Gallery</p>
         <h2 className="section-heading">Moments, preserved.</h2>
         <p className="section-subtitle" style={{ margin: "0 auto" }}>
-          A collection of real photographs — each one a page from the story.
+          Urur sawirro dhab ah — mid kasta waa boggag ka mid ah sheekada.
         </p>
       </div>
 

@@ -37,7 +37,7 @@ export default function Hero() {
           Happy Birthday,<br /><em>Fatxi Abdirahman</em>
         </h1>
         <p className="hero-description">
-          A little website for a big collection of memories — the kind that distance can change, but time cannot erase.
+          Website yar oo ururin xusuuso badan — kuwa masaafadu u beddeli karto, laakiinna waqtigu tirtiri karo.
         </p>
         <p className="hero-date">September 12 · A day worth remembering</p>
         <div className="hero-cta">

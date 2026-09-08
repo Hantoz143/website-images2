@@ -44,7 +44,7 @@ export default function MemoryWall() {
       <div className="memory-wall-header">
         <p className="section-label">06 · Memory Wall</p>
         <h2 className="section-heading">Six memories, one story.</h2>
-        <p className="section-subtitle" style={{ margin: "0 auto" }}>Tap a card to open a moment.</p>
+        <p className="section-subtitle" style={{ margin: "0 auto" }}>Taabo kaar si aad u furto xusuus.</p>
       </div>
 
       <div className="memory-grid" ref={gridRef}>
@@ -66,7 +66,7 @@ export default function MemoryWall() {
               <p className="memory-card-date">{mc.date}</p>
               <h3 className="memory-card-title">{mc.title}</h3>
               <p className="memory-card-desc">{mc.description}</p>
-              <p className="memory-card-hint">Open memory →</p>
+              <p className="memory-card-hint">Fur xusuusta →</p>
             </div>
           </div>
         ))}

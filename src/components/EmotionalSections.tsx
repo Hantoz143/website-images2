@@ -60,13 +60,13 @@ export function BirthdaySurprise() {
               ))}
             </div>
             <div className="birthday-photo">
-              <img src={imageSources.birthday[0]} alt="Birthday photograph of Fatxi" />
+              <img src={imageSources.birthday[0]} alt="Sawirka dhalashada ee Fatxi" />
             </div>
             <div className="birthday-ribbon">For you, Fatxi</div>
           </div>
 
           <p className="birthday-cta">{opened ? "Close" : "Tap to open"}</p>
-          <p className="birthday-cta-hint">{opened ? "" : "A small wish, hidden inside the flowers."}</p>
+          <p className="birthday-cta-hint">{opened ? "" : "Raryo yar, ku dhufan gudaheada ubaxyada."}</p>
         </div>
 
         {opened && (

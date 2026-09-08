@@ -1,0 +1,164 @@
+.future-section {
+  padding: var(--space-8) var(--space-4);
+  background: var(--ivory);
+  position: relative;
+  overflow: hidden;
+}
+
+.future-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.future-header {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.future-heading {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.future-letter-card {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--warm-brown);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-5);
+  box-shadow: var(--shadow-medium);
+  overflow: hidden;
+}
+
+.future-letter-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+.future-floral {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.45;
+}
+
+.future-floral-tl { top: -10px; left: -10px; }
+.future-floral-tr { top: -10px; right: -10px; transform: scaleX(-1); }
+.future-floral-bl { bottom: -10px; left: -10px; transform: scaleY(-1); }
+.future-floral-br { bottom: -10px; right: -10px; transform: scale(-1, -1); }
+
+.future-letter-body {
+  position: relative;
+  z-index: 1;
+}
+
+.future-letter-para {
+  font-size: 1.02rem;
+  color: var(--taupe);
+  line-height: 2;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-body);
+}
+
+.future-love-line {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--rose);
+  text-align: center;
+  margin: var(--space-4) 0;
+  line-height: 1.4;
+  opacity: 0;
+  animation: future-love-fade 2s ease 0.5s forwards;
+}
+
+.future-heart {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+@keyframes future-love-fade {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.future-signature {
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--rose);
+  text-align: right;
+  margin-top: var(--space-5);
+  padding-right: var(--space-2);
+  opacity: 0.8;
+}
+
+/* Petals */
+.future-petals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.future-petal {
+  position: absolute;
+  top: -15px;
+  width: 10px;
+  height: 10px;
+  background: var(--dusty-pink);
+  border-radius: 50% 0 50% 50%;
+  opacity: 0;
+  animation: future-petal-fall linear infinite;
+}
+
+@keyframes future-petal-fall {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  10% { opacity: 0.5; }
+  90% { opacity: 0.3; }
+  100% {
+    opacity: 0;
+    transform: translateY(600px) translateX(var(--petal-drift, 20px)) rotate(360deg);
+  }
+}
+
+/* Subtle glowing particles */
+.future-letter-card::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(217, 174, 180, 0.06) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .future-section { padding: var(--space-7) var(--space-3); }
+  .future-letter-card { padding: var(--space-4) var(--space-3); }
+  .future-letter-para { font-size: 0.95rem; line-height: 1.9; }
+  .future-love-line { font-size: 1.6rem; }
+  .future-signature { font-size: 1.3rem; }
+  .future-floral { width: 55px; height: 55px; }
+  .future-floral-tl { top: -5px; left: -5px; }
+  .future-floral-tr { top: -5px; right: -5px; }
+  .future-floral-bl { bottom: -5px; left: -5px; }
+  .future-floral-br { bottom: -5px; right: -5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .future-love-line { opacity: 1; animation: none; }
+  .future-petal { display: none; }
+}

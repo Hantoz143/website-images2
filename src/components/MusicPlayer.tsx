@@ -1,42 +1,54 @@
 import { useRef, useState } from "react";
 import "../styles/music.css";
 
-const VIDEO_ID = "d-Vk67w0UHw";
+const VIDEO_ID = "pvgRyFqJFDg";
 
 export default function MusicPlayer() {
   const [playing, setPlaying] = useState(false);
-  const [iframeVisible, setIframeVisible] = useState(false);
+  const [iframeMounted, setIframeMounted] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  const handleToggle = () => {
-    if (!playing) {
-      setIframeVisible(true);
+  const handlePlay = () => {
+    setIframeMounted(true);
+    setPlaying(true);
+    requestAnimationFrame(() => {
       const iframe = iframeRef.current;
       if (iframe) {
         iframe.src = `https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&loop=1&playlist=${VIDEO_ID}`;
       }
-      setPlaying(true);
-    } else {
-      const iframe = iframeRef.current;
-      if (iframe) {
-        iframe.src = `https://www.youtube.com/embed/${VIDEO_ID}`;
-      }
-      setPlaying(false);
+    });
+  };
+
+  const handlePause = () => {
+    const iframe = iframeRef.current;
+    if (iframe) {
+      iframe.src = `https://www.youtube.com/embed/${VIDEO_ID}`;
     }
+    setPlaying(false);
+  };
+
+  const handleToggle = () => {
+    if (!playing) handlePlay();
+    else handlePause();
   };
 
   return (
     <div className="music-player">
-      <div className={`music-iframe-wrapper ${iframeVisible ? "visible" : ""}`} aria-hidden={!iframeVisible}>
-        <iframe
-          ref={iframeRef}
-          title="Birthday song for Fatxi"
-          width="200"
-          height="60"
-          src=""
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+      <div
+        className={`music-iframe-wrapper ${iframeMounted ? "visible" : ""}`}
+        aria-hidden={!iframeMounted}
+      >
+        {iframeMounted && (
+          <iframe
+            ref={iframeRef}
+            title="Love Love Soomaali — Birthday Song"
+            width="200"
+            height="60"
+            src=""
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+          />
+        )}
       </div>
       <button
         className={`music-button ${playing ? "playing" : ""}`}
@@ -55,7 +67,7 @@ export default function MusicPlayer() {
         ) : (
           <>
             <span className="music-icon" aria-hidden="true">♪</span>
-            <span>Play song</span>
+            <span>Play Song</span>
           </>
         )}
       </button>

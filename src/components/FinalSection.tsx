@@ -72,13 +72,13 @@ export default function FinalSection() {
         </p>
 
         <div className="countdown" aria-label="Countdown to September 12">
-          <div className="countdown-unit"><span className="countdown-number">{time.days}</span><span className="countdown-label">Days</span></div>
+          <div className="countdown-unit"><span className="countdown-number">{time.days}</span><span className="countdown-label">Maalmood</span></div>
           <span className="countdown-separator">:</span>
-          <div className="countdown-unit"><span className="countdown-number">{time.hours}</span><span className="countdown-label">Hours</span></div>
+          <div className="countdown-unit"><span className="countdown-number">{time.hours}</span><span className="countdown-label">Saacad</span></div>
           <span className="countdown-separator">:</span>
-          <div className="countdown-unit"><span className="countdown-number">{time.minutes}</span><span className="countdown-label">Minutes</span></div>
+          <div className="countdown-unit"><span className="countdown-number">{time.minutes}</span><span className="countdown-label">Daqiiqo</span></div>
           <span className="countdown-separator">:</span>
-          <div className="countdown-unit"><span className="countdown-number">{time.seconds}</span><span className="countdown-label">Seconds</span></div>
+          <div className="countdown-unit"><span className="countdown-number">{time.seconds}</span><span className="countdown-label">Ilbidhiqsi</span></div>
         </div>
 
         <div className="final-cta">

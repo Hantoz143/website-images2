@@ -23,8 +23,8 @@
 
 .birthday-floral-wrap {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 280px;
+  height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,8 +41,8 @@
 }
 
 .birthday-photo {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--paper);
@@ -263,8 +263,8 @@
 
 @media (max-width: 768px) {
   .wishes-grid { grid-template-columns: 1fr; }
-  .birthday-floral-wrap { width: 260px; height: 260px; }
-  .birthday-photo { width: 160px; height: 160px; }
+  .birthday-floral-wrap { width: 220px; height: 220px; }
+  .birthday-photo { width: 130px; height: 130px; }
   .letter-card { padding: var(--space-4); }
   .letter-card::before, .letter-card::after { width: 40px; height: 40px; }
 }
