@@ -72,7 +72,7 @@ export default function FutureSection() {
     <section className="future-section" id="future">
       <div ref={ref} className={`future-inner reveal ${visible ? "visible" : ""}`}>
         <div className="future-header">
-          <p className="section-label">A friendship I never want to lose</p>
+          <p className="section-label">10 · A friendship I never want to lose</p>
           <h2 className="section-heading future-heading">The Future I Hope For</h2>
         </div>
 

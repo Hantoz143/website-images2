@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import Flower from "./Flower";
 import { memoryCards } from "../data/images";
 import "../styles/memory-wall.css";
 
@@ -60,7 +61,15 @@ export default function MemoryWall() {
               if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setActiveCard(i); }
             }}
           >
-            <div className="memory-card-image"><img src={mc.image} alt={mc.title} /></div>
+            <div className="memory-card-image">
+              {mc.image ? (
+                <img src={mc.image} alt={mc.title} />
+              ) : (
+                <div className="memory-card-floral" aria-hidden="true">
+                  <Flower variant="small" color="#d9aeb4" />
+                </div>
+              )}
+            </div>
             <div className="memory-card-body">
               <p className="memory-card-number">{mc.number}</p>
               <p className="memory-card-date">{mc.date}</p>
@@ -82,7 +91,13 @@ export default function MemoryWall() {
         >
           <div className="memory-modal" onClick={(e) => e.stopPropagation()}>
             <button className="memory-modal-close" onClick={() => setActiveCard(null)} aria-label="Close memory">×</button>
+          {card.image ? (
             <div className="memory-modal-image"><img src={card.image} alt={card.title} /></div>
+          ) : (
+            <div className="memory-modal-floral" aria-hidden="true">
+              <Flower variant="full" color="#d9aeb4" />
+            </div>
+          )}
             <div className="memory-modal-body">
               <p className="memory-modal-number">{card.number}</p>
               <h3 className="memory-modal-title">{card.title}</h3>

@@ -139,7 +139,7 @@ export function LetterSection() {
     <section className="letter-section" id="letter">
       <div ref={ref} className={`reveal ${visible ? "visible" : ""}`}>
         <div className="letter-header">
-          <p className="section-label">10 · The Letter</p>
+          <p className="section-label">11 · The Letter</p>
           <h2 className="section-heading">One last thing.</h2>
         </div>
         <div className="letter-card">

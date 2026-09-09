@@ -23,8 +23,8 @@ export default function App() {
         <Gallery />
         <BirthdaySurprise />
         <WishesSection />
-        <LetterSection />
         <FutureSection />
+        <LetterSection />
         <FinalSection />
       </main>
       <MusicPlayer />

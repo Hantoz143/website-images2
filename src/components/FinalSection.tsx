@@ -64,7 +64,7 @@ export default function FinalSection() {
       </div>
 
       <div className="final-content">
-        <p className="final-label">10 · Today is your day</p>
+        <p className="final-label">12 · Today is your day</p>
         <p className="final-script">Happy Birthday</p>
         <h2 className="final-heading">Fatxi.</h2>
         <p className="final-message">

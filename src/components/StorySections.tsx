@@ -43,7 +43,7 @@ export function MeetingSection() {
         <div className="story-text">
           <p className="section-label">02 · The day we met</p>
           <h2 className="section-heading">20 February 2024.</h2>
-          <p className="section-subtitle">Maalintii saaxiibtinimadii shaashaddu noqotay xusuus dhab ah.</p>
+          <p className="section-subtitle">20 Febraayo 2024 — waa maalintii saaxiibtinimadii shaashaddu noqotay xusuus dhab ah, iyo kulan rasmi ah.</p>
           <div className="section-story story-somali">
             <p>Bilado ka dib oo wada hadal ah oo shaashadda marayay, 20 Febraayo 2024 waa maalintii sheekadu ka soo baxday telefoonka oo soo gaaray adduunka dhabta ah.</p>
             <p>Markii ugu horreysay ee aan isaga ceshano meesha isla mararka ah. Markii ugu horreysay ee codku yeesho waji, joogto, iyo kul ka shaashadda aan kuixin karin.</p>
@@ -55,7 +55,7 @@ export function MeetingSection() {
             <div className="story-floral br" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
             <img src={imageSources.meeting[0]} alt="20 Febraayo 2024 — maalintii aan isku aragnay" />
           </div>
-          <p className="story-image-caption">Maalintii aan ugu dambayn isu aragnay.</p>
+          <p className="story-image-caption">sawirkan aad baan u jeclahay.</p>
         </div>
       </div>
     </section>
@@ -82,9 +82,9 @@ export function LiidoSection() {
           <div className="story-image-frame">
             <div className="story-floral tl" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
             <div className="story-floral br" aria-hidden="true"><Flower variant="corner" color="#d9aeb4" /></div>
-            <img src={imageSources.liido[0]} alt="Liido — habeen aan la xasuusan karin" />
+            <img src={imageSources.meeting[1]} alt="Liido — habeen aan la xasuusan karin" />
           </div>
-          <p className="story-image-caption">Habeen ka sii hargaysa.</p>
+          <p className="story-image-caption">Sawirkii ugu horeeye ee aan wada galnay buu ahah kani. Aad ban ujeclahay dawashadiisa fatxiye</p>
         </div>
       </div>
     </section>
@@ -109,10 +109,6 @@ export function JourneySection() {
           <div className="journey-image">
             <img src={imageSources.journey[0]} alt="Darjiinka — waddada dhexe" />
             <div className="journey-caption">Darjiinka ↔ Sanco</div>
-          </div>
-          <div className="journey-image">
-            <img src={imageSources.journey[1]} alt="Safar ka badan masaafad" />
-            <div className="journey-caption">Safar ka badan masaafad</div>
           </div>
         </div>
       </div>
